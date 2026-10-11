@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>claude-workspace</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#5b6166; --bg:#fff; --line:#e3e6e8; --accent:#2f6f4f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --fg:#e9ecee; --muted:#9aa3a9; --bg:#15181a; --line:#2b3034; --accent:#7fc4a0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height:1.8; }
+  main { max-width: 42rem; margin:0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size:1.6rem; margin:0 0 .25rem; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; font-size:.95rem; }
+  h2 { font-size:1.1rem; margin:2.5rem 0 .75rem; padding-bottom:.4rem; border-bottom:1px solid var(--line); }
+  ul { padding-left:1.25rem; }
+  a { color:var(--accent); }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--line);
+    color:var(--muted); font-size:.875rem; }
+  footer a { margin-right:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>claude-workspace</h1>
+  <p class="sub">個人の業務環境を自動化するための、作者本人専用ツールです。</p>
+
+  <h2>概要</h2>
+  <p>
+    Claude Code と Model Context Protocol（MCP）サーバーを組み合わせて、
+    メール・カレンダー・スプレッドシートの読み書きを自動化するローカル環境です。
+    作者本人のパソコン上でのみ動作し、第三者への配布や一般公開はしていません。
+  </p>
+
+  <h2>できること</h2>
+  <ul>
+    <li>Gmail のメール検索・取得・送信</li>
+    <li>Google カレンダーの予定の参照・登録・更新</li>
+    <li>Google ドライブ / スプレッドシート / ドキュメントの読み書き</li>
+  </ul>
+
+  <h2>Google アカウントへのアクセス</h2>
+  <p>
+    本ツールは Google OAuth 2.0 を使い、作者本人の Google アカウントにアクセスします。
+    アクセストークンは本人のパソコン内にのみ保存され、外部のサーバーへは送信されません。
+    取り扱いの詳細は<a href="privacy.html">プライバシーポリシー</a>に記載しています。
+  </p>
+
+  <footer>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+  </footer>
+</main>
+</body>
+</html>

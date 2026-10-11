@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#5b6166; --bg:#fff; --line:#e3e6e8; --accent:#2f6f4f; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --fg:#e9ecee; --muted:#9aa3a9; --bg:#15181a; --line:#2b3034; --accent:#7fc4a0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    line-height:1.85; }
+  main { max-width: 42rem; margin:0 auto; padding: 3rem 1rem 4rem; }
+  h1 { font-size:1.5rem; margin:0 0 .25rem; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; font-size:.9rem; }
+  h2 { font-size:1.05rem; margin:2.25rem 0 .6rem; padding-bottom:.4rem; border-bottom:1px solid var(--line); }
+  ul { padding-left:1.25rem; }
+  a { color:var(--accent); }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--line);
+    color:var(--muted); font-size:.875rem; }
+  footer a { margin-right:1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>プライバシーポリシー</h1>
+  <p class="sub">claude-workspace ／ 最終更新日: 2026年10月12日</p>
+
+  <h2>1. 本ツールの性質</h2>
+  <p>
+    claude-workspace は、作者本人が自分の業務環境を自動化するために作成した
+    個人利用のツールです。第三者に配布しておらず、作者本人以外のユーザーは存在しません。
+  </p>
+
+  <h2>2. 取得する情報</h2>
+  <p>本ツールは、作者本人が許可した範囲で、本人の Google アカウントの以下の情報にアクセスします。</p>
+  <ul>
+    <li>Gmail のメール（検索・閲覧・作成・送信）</li>
+    <li>Google カレンダーの予定（閲覧・作成・更新・削除）</li>
+    <li>Google ドライブ上のファイル、スプレッドシート、ドキュメント（閲覧・作成・編集）</li>
+    <li>アカウントのメールアドレスおよび基本的なプロフィール情報</li>
+  </ul>
+
+  <h2>3. 情報の利用目的</h2>
+  <p>
+    取得した情報は、作者本人の指示に基づく作業（メールの確認と返信、予定の登録、
+    資料の作成と整理など）を実行する目的のみに利用します。
+    それ以外の目的には一切利用しません。
+  </p>
+
+  <h2>4. 情報の保存場所</h2>
+  <p>
+    OAuth のアクセストークンおよびリフレッシュトークンは、
+    作者本人のパソコン内のローカルファイルにのみ保存されます。
+    外部のサーバーやデータベースには保存しません。
+    Google アカウントから取得したデータも、処理のためにメモリ上で扱うのみで、
+    本ツールが独自に蓄積・保管することはありません。
+  </p>
+
+  <h2>5. 第三者への提供</h2>
+  <p>
+    取得した情報を第三者へ販売、譲渡、貸与することは一切ありません。
+    広告配信、プロファイリング、機械学習モデルの学習には利用しません。
+    なお、処理の実行にあたっては Anthropic が提供する Claude を利用するため、
+    作業に必要な範囲の内容が Claude へ送信されます。
+  </p>
+
+  <h2>6. Google ユーザーデータの取り扱い</h2>
+  <p>
+    本ツールによる Google API から取得した情報の使用および他アプリへの移送は、
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+    Google API Services User Data Policy</a>（Limited Use の要件を含む）に従います。
+  </p>
+
+  <h2>7. アクセスの取り消し</h2>
+  <p>
+    付与したアクセス権は、
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google アカウントの「サードパーティ アプリとの連携」</a>
+    からいつでも取り消せます。取り消すと、ローカルに保存されたトークンは無効になります。
+  </p>
+
+  <h2>8. 保存期間と削除</h2>
+  <p>
+    ローカルのトークンファイルは、不要になった時点で削除します。
+    アクセスを取り消した場合、またはツールの利用を終了した場合は、
+    該当するトークンファイルを削除します。
+  </p>
+
+  <h2>9. 本ポリシーの変更</h2>
+  <p>
+    本ポリシーは必要に応じて更新します。更新した場合は本ページの最終更新日を改めます。
+  </p>
+
+  <h2>10. お問い合わせ</h2>
+  <p>
+    本ツールおよび本ポリシーに関するお問い合わせは、
+    <a href="https://github.com/waspryo/claude-workspace/issues" target="_blank" rel="noopener">GitHub リポジトリの Issue</a>
+    からお願いします。
+  </p>
+
+  <footer>
+    <a href="./">トップ</a>
+    <a href="terms.html">利用規約</a>
+  </footer>
+</main>
+</body>
+</html>
